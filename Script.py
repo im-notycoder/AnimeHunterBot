@@ -199,8 +199,8 @@ Nᴀᴍᴇ - {}"""
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @doraemon_update
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @doraemon_support_t
+▫️ ᴄʜᴀɴɴᴇʟ : <a href="https://t.me/naruto_update_ch">ᴜᴘᴅᴀᴛᴇ</a>
+▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href="https://t.me/naruto_support_ch">ꜱᴜᴘᴘᴏʀᴛ ⚡️</a>
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
