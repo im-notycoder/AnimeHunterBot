@@ -195,7 +195,6 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
-
 <b>
 ╭────── • ◆ • ──────╮
 📮ᴊᴏɪɴ :  <a href="https://t.me/naruto_update_ch">ʜᴇʀᴇ</a>
