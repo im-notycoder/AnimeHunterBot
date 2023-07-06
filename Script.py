@@ -197,14 +197,14 @@ Nᴀᴍᴇ - {}"""
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
 
 <b>
-╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/Hariomsingh31u">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : <a href="https://t.me/naruto_update_ch">ᴜᴘᴅᴀᴛᴇ</a>
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href="https://t.me/naruto_support_ch">ꜱᴜᴘᴘᴏʀᴛ ⚡️</a>
-=========== • ✠ • ===========</b>"""
+╭────── • ◆ • ──────╮
+📮ᴊᴏɪɴ :  <a href="https://t.me/naruto_update_ch">ʜᴇʀᴇ</a>
+📝 ᴍᴏᴠɪᴇs :  <a href="https://t.me/hb_moive">ɢʀᴏᴜᴘ</a>
+🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/Hariomsingh31u">Tᴏᴜᴄʜ</a>
+╰────── • ◆ • ──────╯
+  
+   ♡ ㅤ  ❍ㅤ     ⎙     ⌲
+  ˡᶦᵏᵉ ᶜᵒᵐᵐᵉⁿᵗ  ˢᵃᵛᵉ  ˢʰᵃʳᵉ</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
