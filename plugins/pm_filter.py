@@ -384,8 +384,27 @@ async def language_check(bot, query):
             btn.append(
                 [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
             )
-        try:
-            await query.edit_message_reply_markup(
+        try:await query.message.edit_text(
+            text="▬▬ ▭▭ ▭▭ ▭▭ ▭▭ ▭▭ SEARCHING...   10/𝟏𝟎𝟎% ▬▬ ▭▭ ▭▭  ▭▭ ▭▭ ▭▭"
+        )
+        await query.message.edit_text(
+            text="▬▬ ▬▬ ▭▭ ▭▭ ▭▭ ▭▭ SEARCHING...   30/𝟏𝟎𝟎% ▬▬ ▬▬ ▭▭  ▭▭ ▭▭ ▭▭"
+        )
+        await query.message.edit_text(
+            text="▬▬ ▬▬ ▬▬  ▭▭ ▭▭ ▭▭ SEARCHING...   50/𝟏𝟎𝟎% ▬▬ ▬▬ ▬▬  ▭▭ ▭▭ ▭▭"
+        )
+         await query.message.edit_text(
+            text="▬▬ ▬▬ ▬▬  ▬▬ ▭▭ ▭▭ SEARCHING...   70/𝟏𝟎𝟎% ▬▬ ▬▬ ▬▬  ▬▬ ▭▭ ▭▭"
+        )
+         await query.message.edit_text(
+            text="▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▭▭ LOADING...   80/𝟏𝟎𝟎% ▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▭▭"
+        )
+         await query.message.edit_text(
+          text="▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▭▭ LOADING...   90/𝟏𝟎𝟎% ▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▭▭"
+        )
+        await query.message.edit_text(
+            text="▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▬▬ LOADING...   100/𝟏𝟎𝟎% ▬▬ ▬▬ ▬▬  ▬▬ ▬▬ ▬▬"
+)
                 reply_markup=InlineKeyboardMarkup(btn)
             )
         except MessageNotModified:
