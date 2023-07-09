@@ -7,7 +7,7 @@ async def ai(query):
      
 async def ask_ai(client, m, message):
     try:
-        question = message.text.split(" ", 1)[1]
+        question = message.text.split("<code> </code>", 1)[1]
         # Generate response using OpenAI API
         response = await ai(question)
         # Send response back to user
