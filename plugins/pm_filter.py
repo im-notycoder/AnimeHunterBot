@@ -1155,7 +1155,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ● ●"
+            text="● ◌ ◌"
         )
         await query.message.edit_text(
             text="● ● ◌"
@@ -1186,7 +1186,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ● ●"
+            text="● ◌ ◌"
         )
         await query.message.edit_text(
             text="● ● ◌"
@@ -1216,6 +1216,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.GFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1235,7 +1244,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="● ● ●"
+            text="● ◌ ◌"
         )
         await query.message.edit_text(
             text="● ● ◌"
@@ -1268,6 +1277,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1277,6 +1295,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -1293,6 +1320,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Bᴜᴛᴛᴏɴs', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -1314,6 +1350,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.BUTTON_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1329,6 +1374,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1343,6 +1397,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
         await query.message.edit_text(
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
@@ -1360,6 +1423,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.EXTRAMOD_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1376,6 +1448,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await query.message.edit_text(
             text=script.FILE_STORE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1391,6 +1472,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
         await query.message.edit_text(
             text=script.ADMIN_TXT,
             reply_markup=reply_markup,
