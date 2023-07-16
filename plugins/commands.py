@@ -31,7 +31,7 @@ async def start(client, message):
                     InlineKeyboardButton('♻️ Aʙᴏᴜᴛ ♻️', callback_data='about'),
                     InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'http://t.me/hb_moive')
                 ],[
-                    InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', url=CHNL_LNK)
+                    InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='EARN_TXT')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
