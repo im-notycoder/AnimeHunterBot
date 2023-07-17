@@ -1144,13 +1144,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
-                    InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
+                    InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
                 ],[
                     InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
-                    InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about'),
-                    InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/hb_moive')
+                    InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='earn_txt')
+                    InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1203,6 +1202,96 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.ALL_FILTERS.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "money_bot":
+        buttons = [[
+            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/hb_moive'),
+            InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
+        ],[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.EARN_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "dash":
+        buttons = [[
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='oggy')
+        ],[
+            InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='start'),
+            InlineKeyboardButton('♻️ ʜᴇʟᴩ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://graph.org/file/28b44582b7b08c4a30892.jpg")
+        )
+        await query.message.edit_text(
+            text=script.DASH_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
+    elif query.data == "oggy":
+        buttons = [[
+            InlineKeyboardButton('🔙 ʙᴀᴄᴋ', callback_data='dash'),
+            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start')
+         ]]
+        reply_markup= InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+
+            text="● ◌ ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ●"
+
+        )
+        await client.edit_message_media(
+             query.message.chat.id,
+             query.message.id,
+             InputMediaPhoto("https://graph.org/file/ee34b0724874906476b07.jpg")     
+        )
+        await query.message.edit_text(
+             text=script.OGGY_TXT,
+             reply_markup=reply_markup,
+             parse_mode=enums.ParseMode.HTML
         )
 
     elif query.data == "global_filters":
