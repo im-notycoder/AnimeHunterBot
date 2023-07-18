@@ -235,7 +235,7 @@ IMDb Data:
 
 ➥ ᴇxᴀᴍᴘʟᴇ ↓↓↓
 
-/set_shortner shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db
+/shortlink shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db
 
 ☢ ɴᴏᴛᴇ : ʏᴏᴜ sʜᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ᴀɴ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ. sᴇɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜᴏᴜᴛ ʙᴇɪɴɢ ᴀɴ ᴀɴᴏɴʏᴍᴜs ᴀᴅᴍɪɴ.  
 <b>"""
@@ -253,7 +253,7 @@ IMDb Data:
 
 ›› sᴛᴇᴘ 𝟹 : ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴇʟᴏᴡ ɢɪᴠᴇɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ᴡɪᴛʜ ᴛʜɪs ʙᴏᴛ.
 
-★ ʟɪᴋᴇ ᴛʜɪꜱ :  /set_shortner shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db
+★ ʟɪᴋᴇ ᴛʜɪꜱ :  /shortlink shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db
 
 ➥ ᴅᴏɴ'ᴛ ᴡᴀɪᴛ ᴀɴy ʟᴏɴɢᴇʀ ᴛᴏ ꜱᴛᴀʀᴛ ᴇᴀʀɴɪɴɢ ᴍᴏɴᴇy ꜰʀᴏᴍ yᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ. ᴀᴅᴅ ᴏᴜʀ ʙᴏᴛ ᴛᴏᴅᴀy ᴀɴᴅ ꜱᴛᴀʀᴛ ᴍᴀᴋɪɴɢ ᴍᴏɴᴇy 💰!
     
