@@ -106,7 +106,8 @@ async def next_page(bot, query):
     else:
         await save_group_settings(query.message.chat.id, 'is_shortlink', False)
         ENABLE_SHORTLINK = False
-    if ENABLE_SHORTLINK and settings['button']:
+    if ENABLE_SHORTLINK = True
+        if settings['button']:
         btn = [
             [
                 InlineKeyboardButton(
@@ -148,6 +149,8 @@ async def next_page(bot, query):
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
+           else:      
+        await query.answer(f"⚠️𝐇𝐞𝐲 {query.from_user.first_name}, {search} 𝐍𝐞𝐱𝐭 𝐅𝐢𝐥𝐞𝐬 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠.. \n\n ⏳️𝐅𝐢𝐥𝐞𝐬 {offset}", show_alert=True)
             for file in files
         ]
     try:
