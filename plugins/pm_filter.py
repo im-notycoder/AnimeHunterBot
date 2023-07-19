@@ -107,7 +107,7 @@ async def next_page(bot, query):
         await save_group_settings(query.message.chat.id, 'is_shortlink', False)
         ENABLE_SHORTLINK = False
     if ENABLE_SHORTLINK == True:
-        if settings['button']:
+    if settings['button']:
         btn = [
             [
                 InlineKeyboardButton(
