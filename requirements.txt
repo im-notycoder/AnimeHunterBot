@@ -17,3 +17,4 @@ telegraph
 gTTS
 aiofiles
 speedtest
+PIL
