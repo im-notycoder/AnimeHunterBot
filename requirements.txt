@@ -18,3 +18,4 @@ gTTS
 aiofiles
 speedtest
 Pillow
+googletrans==3.1.0a0
