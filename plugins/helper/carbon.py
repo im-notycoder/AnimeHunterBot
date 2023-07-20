@@ -1,47 +1,50 @@
-import os
-import requests
-from requests.utils import requote_uri
-from pyrogram import Client, filters, enums
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters
+from aiohttp import ClientSession
+from pyrogram import Client as bot
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from asyncio import gather
+from datetime import datetime, timedelta
+from io import BytesIO
+from math import atan2, cos, radians, sin, sqrt
+from os import execvp
+from random import randint
+from re import findall
+from re import sub as re_sub
+from sys import executable
+import aiofiles
+import speedtest
+from PIL import Image
+from pyrogram.types import Message
+from info import S_GROUP
 
-API = "https://api.sumanjay.cf/covid/?country="
+aiohttpsession = ClientSession()
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data='close_data')]])
+async def make_carbon(code):
+    url = "https://carbonara.vercel.app/api/cook"
+    async with aiohttpsession.post(url, json={"code": code}) as resp:
+        image = BytesIO(await resp.read())
+    image.name = "carbon.png"
+    return image
 
-@Client.on_message(filters.command("covid"))
-async def reply_info(client, message):
-    query = message.text.split(None, 1)[1]
+
+@bot.on_message(filters.command("carbon"))
+async def carbon_func(_, message):
+    if not message.reply_to_message:
+        return await message.reply_text(
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+        )
+    if not message.reply_to_message.text:
+        return await message.reply_text(
+            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+        )
+    user_id = message.from_user.id
+    m = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
+    carbon = await make_carbon(message.reply_to_message.text)
+    await m.edit("ᴜᴘʟᴏᴀᴅɪɴɢ..")
     await message.reply_photo(
-        photo="https://telegra.ph/file/51fdcccb41510ff8af8b1.jpg",
-        caption=covid_info(query),
-        quote=True
+        photo=carbon,
+        caption="**ᴛʜɪs ᴘɪᴄ ɪs ɴɪᴄᴇ ᴏɴᴇ\nᴍᴀᴅᴇ ʙʏ @MLZ_BOTZ**",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url='https://t.me/MLZ_BOTZ_SUPPORT')]]),                   
     )
-
-
-def covid_info(country_name):
-    try:
-        r = requests.get(API + requote_uri(country_name.lower()))
-        info = r.json()
-        country = info['country'].capitalize()
-        active = info['active']
-        confirmed = info['confirmed']
-        deaths = info['deaths']
-        info_id = info['id']
-        last_update = info['last_update']
-        latitude = info['latitude']
-        longitude = info['longitude']
-        recovered = info['recovered']
-        covid_info = f"""--**𝙲𝙾𝚅𝙸𝙳 𝟷𝟿 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽**--
-᚛› Country : `{country}`
-᚛› Actived : `{active}`
-᚛› Confirmed : `{confirmed}`
-᚛› Deaths : `{deaths}`
-᚛› ID : `{info_id}`
-᚛› Last Update : `{last_update}`
-᚛› Latitude : `{latitude}`
-᚛› Longitude : `{longitude}`
-᚛› Recovered : `{recovered}`"""
-        return covid_info
-    except Exception as error:
-        return error
-
+    await m.delete()
+    carbon.close()
