@@ -16,3 +16,4 @@ PyPDF2
 telegraph
 gTTS
 aiofiles
+speedtest
