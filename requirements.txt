@@ -12,3 +12,4 @@ pytz
 aiohttp
 openai
 psutil
+PyPDF2
