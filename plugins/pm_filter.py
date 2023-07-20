@@ -275,8 +275,8 @@ async def language_check(bot, query):
         if 'is_shortlink' in settings.keys():
             ENABLE_SHORTLINK = settings['is_shortlink']
         else:
-            await save_group_settings(query.message.chat.id, 'is_shortlink', False)
-            ENABLE_SHORTLINK = False
+            await save_group_settings(query.message.chat.id, 'is_shortlink', True)
+            ENABLE_SHORTLINK = True
         pre = 'filep' if settings['file_secure'] else 'file'
         if ENABLE_SHORTLINK and settings['button']:
             btn = [
@@ -1145,7 +1145,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
-                    InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
+                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
                 ],[
                     InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
                     InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about')
@@ -1208,7 +1208,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "money_bot":
         buttons = [[
             InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/hb_moive'),
-            InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
+            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
         ]]
