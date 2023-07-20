@@ -149,8 +149,10 @@ async def next_page(bot, query):
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
-            else:      
-        await query.answer(f"⚠️𝐇𝐞𝐲 {query.from_user.first_name}, {search} 𝐍𝐞𝐱𝐭 𝐅𝐢𝐥𝐞𝐬 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠.. \n\n ⏳️𝐅𝐢𝐥𝐞𝐬 {offset}", show_alert=True)
+            else:
+                await query.answer(f"⚠️𝐇𝐞𝐲 {query.from_user.first_name}, {search} 𝐍𝐞𝐱𝐭 𝐅𝐢𝐥𝐞𝐬 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠.. \n\n ⏳️𝐅𝐢𝐥𝐞𝐬 {offset}", show_alert=True)
+
+        
             for file in files
         ]
     try:
