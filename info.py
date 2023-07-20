@@ -51,6 +51,12 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+#Auto approve 
+#In private group or channel must enable request admin approval 
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001863919592').split()]
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
+APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
+
 # Others
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/Verifying5754/3")
