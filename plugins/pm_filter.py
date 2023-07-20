@@ -108,7 +108,7 @@ async def next_page(bot, query):
         ENABLE_SHORTLINK = False
     if ENABLE_SHORTLINK == True:
         if settings['button']:
-        btn = [
+            btn = [
             [
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
