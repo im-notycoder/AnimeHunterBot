@@ -13,3 +13,4 @@ aiohttp
 openai
 psutil
 PyPDF2
+telegraph
