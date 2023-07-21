@@ -491,7 +491,7 @@ def bold_script(text):
             text = text.replace(i, j)
         return text
     
-    def tiny(text):
+def tiny(text):
         style = {
             'a': 'ᵃ',
             'b': 'ᵇ',
