@@ -549,8 +549,8 @@ def bold_script(text):
         for i, j in style.items():
             text = text.replace(i, j)
         return text
-
-    def comic(text):
+        
+        def comic(text):
         style = {
             'a': 'ᗩ',
             'b': 'ᗷ',
