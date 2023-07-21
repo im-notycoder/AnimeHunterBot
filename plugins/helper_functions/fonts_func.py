@@ -1179,7 +1179,8 @@ class Fonts:
         for i, j in style.items():
             text = text.replace(i, j)
         return text
-        def special(text):
+        
+    def special(text):
         style = {
             'a': '🇦 ',
             'b': '🇧 ',
