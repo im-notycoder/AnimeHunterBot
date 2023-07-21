@@ -431,8 +431,8 @@ def script(text):
         for i, j in style.items():
             text = text.replace(i, j)
         return text
-
-    def bold_script(text):
+    
+def bold_script(text):
         style = {
             'a': '𝓪',
             'b': '𝓫',
