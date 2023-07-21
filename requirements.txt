@@ -21,3 +21,4 @@ Pillow
 googletrans==3.1.0a0
 countryinfo
 yt-dlp
+wget
