@@ -26,3 +26,4 @@ youtube_search
 youtube-search-python==1.4.6
 youtube_dl
 pyshorteners
+heroku3
