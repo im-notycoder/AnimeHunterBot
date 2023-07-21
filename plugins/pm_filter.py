@@ -1348,6 +1348,58 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+        await query.message.edit_text(                     
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )      
+    elif query.data == "help":
+        buttons = [[                               
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ​', callback_data='tele'),
+            InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('ꜰɪʟᴇ-sᴛᴏʀᴇ​', callback_data='newdata')
+            ],[           
+            InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
+            InlineKeyboardButton('ᴛᴛs', callback_data='tts'),           
+            InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video')
+            ],[
+            InlineKeyboardButton('ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('ᴜʀʟ_sʜᴏʀᴛ', callback_data='urlshort'),
+            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings')                                   
+            ],[                               
+            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
+            InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun'),
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')
+            ],[
+            InlineKeyboardButton('sᴛɪᴄᴋɪᴅ', callback_data='sticker'),
+            InlineKeyboardButton('ᴡʜᴏɪs', callback_data='whois'),
+            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies')
+            ],[
+            InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
+            InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans'),
+            InlineKeyboardButton('ᴄᴀʀʙᴏɴ', callback_data='carb')
+            ],[
+            InlineKeyboardButton('ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
+            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start')
+            ],[
+            InlineKeyboardButton('↭ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ​↭', callback_data='help2')
+         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ●"
+        )
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
