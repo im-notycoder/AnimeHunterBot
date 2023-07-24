@@ -27,8 +27,8 @@ async def start(client, message):
                     InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
                     InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
                 ],[
-                    InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
-                    InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about')
+                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
                   ]]
@@ -55,8 +55,8 @@ async def start(client, message):
                     InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
                     InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
                 ],[
-                    InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
-                    InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about')
+                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
                   ]]
@@ -106,8 +106,8 @@ async def start(client, message):
                     InlineKeyboardButton('🧑‍💻 Oᴡɴᴇʀ', callback_data= "owner_info"),
                     InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', callback_data='money_bot')
                 ],[
-                    InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
-                    InlineKeyboardButton('💠 Aʙᴏᴜᴛ 💠', callback_data='about')
+                    InlineKeyboardButton('❗️Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🍁 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰𝙴ᴀʀɴ 𝙼ᴏɴᴇʏ 𝚆ɪᴛʜ 𝙱ᴏᴛ 💸', callback_data='dash')
                 ],[
