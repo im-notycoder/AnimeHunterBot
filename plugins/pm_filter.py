@@ -2134,7 +2134,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🔰 ᴛɪᴛʟᴇ : {search}\n👻 ʀᴇqᴜᴇꜱᴛᴇᴅ ʙy : {message.from_user.mention}\n🌧️ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : {total_results}\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}\n\n⚠️ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ.\n</b>"
+        cap = f"<b>🔰 ᴛɪᴛʟᴇ : {search}\n👻 ʀᴇqᴜᴇꜱᴛᴇᴅ ʙy : {message.from_user.mention}\n🌧️ ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : {total_results}\n❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}\n⏱️ Result Shown in: {remaining_seconds}seconds\n\n⚠️ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ.\n</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
