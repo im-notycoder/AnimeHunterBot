@@ -728,7 +728,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                 [
                                 [
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/naruto_support_ch"),
-                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/naruto_update_ch")
+                                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/hbbotz")
                             ],[
                                 InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
                                 ]
@@ -1409,7 +1409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/naruto_update_ch'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz'),
             InlineKeyboardButton('Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='source')
         ],[
             InlineKeyboardButton('Rᴇᴘᴏʀᴛ Bᴜɢꜱ & Fᴇᴇᴅʙᴀᴄᴋ',url=f'https://t.me/naruto_support_ch')
