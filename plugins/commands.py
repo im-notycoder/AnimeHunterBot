@@ -163,7 +163,7 @@ async def start(client, message):
                         [
                          [
                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
                        ],[
                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
                          ]
@@ -182,7 +182,7 @@ async def start(client, message):
                         [
                          [
                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
                        ],[
                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
                          ]
@@ -301,7 +301,7 @@ async def start(client, message):
                     [
                      [
                       InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
                    ],[
                       InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
                      ]
@@ -355,7 +355,7 @@ async def start(client, message):
             [
              [
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/hbbotz')
            ],[
               InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
              ]
