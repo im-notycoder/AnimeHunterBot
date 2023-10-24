@@ -803,7 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('💡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("🧑‍💻 Oᴡɴᴇʀ", url="t.me/Hariomsingh31u")
+                  InlineKeyboardButton("🧑‍💻 Oᴡɴᴇʀ", url="t.me/imm_shivam")
                  ]
                 ]
             )
@@ -1207,8 +1207,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "money_bot":
         buttons = [[
-            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/hb_moive'),
-            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/naruto_support_ch')
+            InlineKeyboardButton('📽 Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/animehunterXhub'),
+            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Nxt_bots')
         ],[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ', callback_data='start'),
         ]]
